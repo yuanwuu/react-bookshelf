@@ -25,7 +25,6 @@ function App() {
 
   useEffect(() =>{
     getBook('Mastering React Native');
-    // getBook(<Featured />)
   },[])
 
   return (

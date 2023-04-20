@@ -1,6 +1,10 @@
 import axios from "axios";
 import { useState,useEffect } from "react";
 import { Carousel } from "react-bootstrap";
+import styles from '../styles/featured.module.css'
+import FeaturedBooksModal from './FeaturedBooksModal'
+import FeaturedCarousel from "./FeaturedCarousel";
+ 
 
 
 export default function Featured () {
@@ -17,18 +21,22 @@ export default function Featured () {
 
     return (
         <>
-        <h1>BOOK OF THE DAY</h1>
+            <h1>CLASSIC BOOK OF THE DAY</h1>
+        <div className={styles.featured}>
         <Carousel />
         {books.map((book) => (
-            <div key={book.id}>
-                <div>
-                    <img src={book.image_url} alt="#"/>
+            <div key={book.id} >
+                {/* <FeaturedCarousel book = {book} /> */}
+                <div className= {styles.card}>
+                    <img className={styles.bookcover} src={book.image_url} alt="#"/>
                     <h5>{book.title}</h5>
-                    <button>Add to Shelf</button>
+                <FeaturedBooksModal book={book} />
+                
                 </div>
             </div>
         ))}
 
+        </div>
         </>
     )
 }
