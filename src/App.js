@@ -1,37 +1,41 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
-import Footer from './components/Footer';
-import Header from './components/Header';
-
-
-
+import axios from 'axios';
+import BookDisplay from './components/BookDisplay';
+import Featured from './components/Featured';
+import { Route, Routes } from 'react-router-dom';
+import Nav from './components/Nav'
+import Search from './components/Search'
 
 function App() {
   const apiKey = process.env.REACT_APP_API_KEY;
-  const searchTerm = 'Harry Potter';
-  
-  const [books, setBooks] = useState([]);
-  
-    useEffect(() => {
-      fetch(`https://www.googleapis.com/books/v1/volumes?q=${searchTerm}&key=${apiKey}`)
-        .then(response => response.json())
-        .then(data => setBooks(data.items));
-    }, []);
-  
-  
-    return (
-      <div className='App'>
-        <Header />
-        {books.map(book => (
-          <div key={book.id}>
-            <h2>{book.volumeInfo.title}</h2>
-            <p>{book.volumeInfo.authors.join(', ')}</p>
-            <img src={book.volumeInfo.imageLinks.thumbnail} alt={book.volumeInfo.title} />
-          </div>
-        ))}
-        <Footer />
-      </div>
-    )
+
+  const [books,setBooks] = useState (null);
+
+  const getBook = async (searchTerm) => {
+    try {
+      const response = await axios.get (`https://www.googleapis.com/books/v1/volumes?q=${searchTerm}&maxResult=40`);
+      console.log(response.data);
+      setBooks(response.data)
+    } catch (err) {
+      console.error(err);
+    }
+  }
+  // getBook();
+
+  useEffect(() =>{
+    getBook('Mastering React Native');
+    // getBook(<Featured />)
+  },[])
+
+  return (
+    <div className="App">
+      <Nav />
+      <Search booksearch = {getBook} />
+      <Featured />
+      <BookDisplay book={books} />
+    </div>
+  );
 }
 
 export default App;
