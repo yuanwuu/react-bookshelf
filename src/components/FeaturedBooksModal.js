@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import {Link } from 'react-router-dom'
 
 export default function FeaturedBooksModal({book}) {
   const [show, setShow] = useState(false);
@@ -20,8 +21,10 @@ export default function FeaturedBooksModal({book}) {
         </Modal.Header>
         <Modal.Body><p>{book.description}</p></Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Book Detail
+          <Button variant="secondary" 
+          // onClick={handleClose}
+          ><Link to="/bookshelf">Go to Book</Link>
+            {/* Book Detail */}
           </Button>
           <Button variant="primary" onClick={handleClose}>
             Add to Shelf

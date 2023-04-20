@@ -5,9 +5,13 @@
     /* border: 1px solid green; */
     justify-content: space-between;
     align-items: center;
-    margin: 0 0 30px 0;
+    margin: 0 10px 30px 10px;
+    color:#192C19;
 }
 
-ul {
-    list-style: none;
+.Nav > h1 {
+    width: 150px;
+    font-weight: bold;
+    text-align: left;
 }
+

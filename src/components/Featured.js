@@ -1,9 +1,9 @@
 import axios from "axios";
 import { useState,useEffect } from "react";
-import { Carousel } from "react-bootstrap";
+// import { Carousel } from "react-bootstrap";
 import styles from '../styles/featured.module.css'
 import FeaturedBooksModal from './FeaturedBooksModal'
-import FeaturedCarousel from "./FeaturedCarousel";
+// import FeaturedCarousel from "./FeaturedCarousel";
  
 
 
@@ -12,7 +12,7 @@ export default function Featured () {
     const [books,setBooks] = useState([]);
     
     useEffect (() => {
-        axios.get(`https://example-data.draftbit.com/books?_limit=6`)
+        axios.get(`https://example-data.draftbit.com/books?_limit=5`)
         .then (response =>{
             console.log(response.data)
             setBooks(response.data)
@@ -23,7 +23,7 @@ export default function Featured () {
         <>
             <h1>CLASSIC BOOK OF THE DAY</h1>
         <div className={styles.featured}>
-        <Carousel />
+        {/* <FeaturedCarousel book = {book} /> */}
         {books.map((book) => (
             <div key={book.id} >
                 {/* <FeaturedCarousel book = {book} /> */}

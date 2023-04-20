@@ -12,8 +12,9 @@ export default function Search(props) {
 
     const handleSubmit = (event) => {
         event.preventDefault()
+        
+        props.booksearch(searchInput.searchTerm)
     }
-
 
     const handleKeyDown = (event) => {
         if (event.key === 'Enter') {

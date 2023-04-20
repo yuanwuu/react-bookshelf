@@ -1,3 +1,4 @@
 .bookResult {
     background-color: aqua;
+    display: flex;
 }

@@ -5,9 +5,11 @@ export default function BookDisplay ({book}) {
         console.log (book)
         return (
             <div className={styles.bookResult}
-            id='bookResult' >
-            <h1>{book.items[0].volumeInfo.title}</h1>
-            <h2>{book.items[0].volumeInfo.authors.join(', ')}</h2>
+            id='bookResult'>
+                <div>
+                    <h1>{book.items[0].volumeInfo.title}</h1>
+                    <h4>{book.items[0].volumeInfo.authors.join(', ')}</h4>
+                </div>
             <img src={book.items[0].volumeInfo.imageLinks.thumbnail} />
             </div>
         )
