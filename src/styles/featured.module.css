@@ -1,9 +1,16 @@
+.Featured{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    /* border: #192C19; */
+}
+
+
 .featured {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    /* border: 1px solid black; */
     justify-content:center;
+    margin-top: 50px;
 }
 
 .bookcover {
@@ -16,7 +23,7 @@
 .card {
     width: 100%;
     height: auto;
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(247, 247, 247);
     border-radius: 10px;
     padding: 10px;
     margin: 10px;

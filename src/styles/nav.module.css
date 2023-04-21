@@ -12,7 +12,9 @@
     width: 150px;
     height: auto;    
 }
-
+.links {
+    color:#192C19;
+}
 
 a {
     text-decoration: none;
