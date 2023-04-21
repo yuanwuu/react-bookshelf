@@ -1,11 +1,11 @@
+About the project
+I want to build a virtual bookshelf where I can keep track of what I had read and what to read next.  I built a random generator for books regardless of genres and authors to expand my book collection.
+
+
 Build with
 - REACT
 - Bootstrap
 
-
-Getting Started
-. npm 
-    > npm install
 
 
 Installation
@@ -16,17 +16,21 @@ Installation
     > npm install
 4. Enter your API in /src/pages/Home.js
     > const apiKey = 'ENTER YOUR API'
+5. Install bootstrap
+    > npm i react-bootstrap bootstrap
+
 
 
 Roadmap
-> Registered for API
-> Test API endpoint
-> Fetch API and monted to the web app
+> Registered, test and fetch the APIp
 > Display the API responses
+> Randomly generated books
 > Added modal
 
 
-Next Stop
+Next Step
 > Get image carouel to work
 > Complete modal functionality, as of now has the look of a modal, functionality have not been implemented
 > Create bookshelf functionality
+> Add tracker / reading habit functionality
+> Add reading note function

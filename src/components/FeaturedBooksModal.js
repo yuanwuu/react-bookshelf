@@ -24,11 +24,11 @@ export default function FeaturedBooksModal({book}) {
         </Modal.Header>
         <Modal.Body><p>{book.description}</p></Modal.Body>
         <Modal.Footer>
-          <button variant="secondary" 
+          {/* <button variant="secondary" 
           // onClick={handleClose}
-          ><Link to="/bookshelf">Go to Book</Link>
-            {/* Book Detail */}
-          </button>
+          >
+            <Link to="/bookself">Go to Book</Link> 
+          </button> */}
           <button variant="primary" onClick={handleClose}>
             Add to Shelf
           </button>

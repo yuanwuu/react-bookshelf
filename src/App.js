@@ -10,6 +10,7 @@ import { Route, Routes } from 'react-router-dom';
 import Nav from './components/Nav'
 import Home from './pages/Home'
 import Bookshelf from './pages/Bookshelf'
+import Footer from './components/Footer'
 
 function App() {
   // const apiKey = process.env.REACT_APP_API_KEY;
@@ -42,7 +43,8 @@ function App() {
       {/* <Search booksearch = {getBook} />
       <Featured />
       <BookDisplay book={books} /> */}
-      
+
+      <Footer />
     </div>
   );
 }
