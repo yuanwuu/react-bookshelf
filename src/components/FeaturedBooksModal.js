@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import {Link } from 'react-router-dom'
+import styles from '../styles/bookModal.module.css'
 
 export default function FeaturedBooksModal({book}) {
   const [show, setShow] = useState(false);
@@ -10,10 +11,12 @@ export default function FeaturedBooksModal({book}) {
   const handleShow = () => setShow(true);
 
   return (
-    <>
-      <Button variant="primary" onClick={handleShow}>
+    <div className={styles.Modal}>
+      <button className='primary'
+      // variant="primary" 
+      onClick={handleShow}>
         LEARN MORE
-      </Button>
+      </button>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
@@ -21,16 +24,16 @@ export default function FeaturedBooksModal({book}) {
         </Modal.Header>
         <Modal.Body><p>{book.description}</p></Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" 
+          <button variant="secondary" 
           // onClick={handleClose}
           ><Link to="/bookshelf">Go to Book</Link>
             {/* Book Detail */}
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
+          </button>
+          <button variant="primary" onClick={handleClose}>
             Add to Shelf
-          </Button>
+          </button>
         </Modal.Footer>
       </Modal>
-    </>
+    </div>
   );
 }

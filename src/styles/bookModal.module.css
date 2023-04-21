@@ -1,0 +1,7 @@
+.Modal{
+    background-color: antiquewhite;
+}
+
+.Modal > button {
+    color:#192C19;
+}

@@ -2,16 +2,22 @@
     display: flex;
     width: 80% vw;
     height: 10% vh;
-    /* border: 1px solid green; */
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     margin: 0 10px 30px 10px;
     color:#192C19;
 }
 
-.Nav > h1 {
+.logo{
     width: 150px;
-    font-weight: bold;
-    text-align: left;
+    height: auto;    
 }
 
+
+a {
+    text-decoration: none;
+    color:#192C19;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bolder;
+}
