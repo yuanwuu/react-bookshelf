@@ -11,10 +11,12 @@ export default function Nav() {
       </div>
       <div className={styles.links}>
         <Link className = {styles.a} to="/">Home</Link>
-        <Link className = {styles.a} to="/about">About</Link>
+        <Link className = {styles.a} to="/bookshelf">Bookshelf</Link>
+
         {/* <Link className = {styles.a} to="/Bookshelf">Bookshelf</Link>
         <Link className = {styles.a} to="/contact">Contact</Link>
         <Link className = {styles.a} to="/faqs">FAQs</Link> */}
+        
       </div>
     </div>
   );

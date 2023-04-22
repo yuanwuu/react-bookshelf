@@ -1,9 +1,11 @@
+// import { Carousel } from "react-bootstrap";
+// import FeaturedCarousel from "./FeaturedCarousel";
+
+
 import axios from "axios";
 import { useState, useEffect } from "react";
-// import { Carousel } from "react-bootstrap";
 import styles from "../styles/featured.module.css";
 import FeaturedBooksModal from "./FeaturedBooksModal";
-// import FeaturedCarousel from "./FeaturedCarousel";
 
 export default function Featured() {
   const [books, setBooks] = useState([]);

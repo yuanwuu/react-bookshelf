@@ -28,7 +28,7 @@ Roadmap
 > Added modal
 
 
-Next Step
+Stretch goals
 > Get image carouel to work
 > Complete modal functionality, as of now has the look of a modal, functionality have not been implemented
 > Create bookshelf functionality
