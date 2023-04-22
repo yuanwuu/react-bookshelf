@@ -11,7 +11,7 @@ Build with
 Installation
 1. Get a free API Key @ Google Book API
 2. Clone the repo
-    > git clone https://github.com/yuanwuu/react-bookshop.git
+    > git clone https://github.com/yuanwuu/react-bookshelf.git
 3. Install NPM packages
     > npm install
 4. Enter your API in /src/pages/Home.js
