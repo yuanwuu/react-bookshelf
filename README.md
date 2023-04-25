@@ -5,6 +5,7 @@ I want to build a virtual bookshelf where I can keep track of what I had read an
 Build with
 - REACT
 - Bootstrap
+- Netlify
 
 
 
