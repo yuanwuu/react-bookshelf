@@ -12,7 +12,7 @@ export default function BookDisplay ({book}) {
                     {/* <h6>{book.items[0].volumeInfo.categories.description}</h6> */}
                     <div><button className={styles.resultButton}>ADD TO BOOKSHELF</button></div>
                 </div>
-            <img src={book.items[0].volumeInfo.imageLinks.thumbnail} />
+            <img src={book.items[0].volumeInfo.imageLinks.thumbnail} alt='#' />
             </div>
         )
     }

@@ -6,7 +6,7 @@ import axios from 'axios';
 import Search from '../components/Search';
 
 export default function Home() {
-  const apiKey = process.env.REACT_APP_API_KEY;
+  // const apiKey = process.env.REACT_APP_API_KEY;
 
   const [books,setBooks] = useState (null);
 
