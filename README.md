@@ -1,25 +1,3 @@
-
-Roadmap
-> Registered, test and fetch the APIp
-> Display the API responses
-> Randomly generated books
-> Added modal
-
-
-Stretch goals
-> Get image carouel to work
-> Complete modal functionality, as of now has the look of a modal, functionality have not been implemented
-> Create bookshelf functionality
-> Add tracker / reading habit functionality
-> Add reading note function
-
-
-
-
-
-
-
-
 <a name="readme-top"></a>
 
 
@@ -32,8 +10,6 @@ Stretch goals
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Forks][forks-shield]][forks-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 <!-- TABLE OF CONTENTS -->
@@ -74,7 +50,7 @@ I want to build a virtual bookshelf where I can keep track of what I had read an
 
 * [![React][React.js]][React-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![HTML][React.js]][React-url]
+<!-- * [![HTML][React.js]][React-url] -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
